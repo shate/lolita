@@ -1,0 +1,133 @@
+header {
+	//position: relative;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	@include respond-to('medium'){
+		height: 120px;
+	}
+	@include respond-to('large') {
+		height: $headrH;
+	}
+	background-color: $header-color;
+	box-sizing: border-box;
+	padding-top: 20px;
+	@include photoshop-drop-shadow(135, 5px, 0, 29px, rgba(#000, 0.35));
+	.logo{		
+	    text-indent: -9999px;
+	     outline: none;
+	}
+	article{
+		@include respond-to('medium'){
+			&:first-child{
+
+				margin-left: 5%;
+			}
+			&:nth-child(2){
+
+			}
+			&:last-child{
+				display: inline-block;
+				position: absolute;
+				right: 5%;
+				top: 35px;
+				a.enter{
+					margin-right: 10px;
+				}
+			}
+
+		}
+		@include respond-to('large'){
+			&:first-child{
+				@include span(2);
+
+				margin-left: 0;
+			}
+			&:nth-child(2){
+				@include span(10);
+
+			}
+			&:last-child{
+				@include span(2 last);
+				padding-top: 7px;
+				position: relative;
+				top: 0;
+				right: 0;
+				>*{
+					display: inline-block;
+
+				}
+				a.enter{
+					margin-right: 0;
+				}
+			}
+		}
+
+	}
+	.lang, .enter{
+		font-size: 9px;
+		text-transform: uppercase;
+		color: #fff;
+		position: relative;
+		line-height: 30px;
+		i{
+			float: left;
+		}
+	}
+	.lang{
+		float: right;
+	}
+	.enter{
+		float: left;
+		i{
+			position: relative;
+			left: 4px;
+			top: 3px;
+		}
+		&:hover{
+			color: #cdb585;
+			span{
+
+				@include wobble-bottom;
+				position: relative;
+			}
+		}
+	}
+	.select_lang.bg-border{
+		cursor: pointer;
+		i{
+			float: none;
+			margin-left: 11px;
+			margin-right: 10px;
+			position: relative;
+			top: 2px;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			@include ico-sprite(coner);
+			right: 10px;
+			top: 15px;
+		}
+	}
+	.list_lang {
+		display: none;
+		position: absolute;
+		border: 1px solid #cdb585;
+		border-radius: 3px;
+		background-color: #292a46;
+		width: 80px;
+		text-align: center;
+		padding: 0 8px 0 10px;
+		z-index: 10;
+
+		right: 0;
+		i{
+			float: left;
+			position: relative;
+			top: 10px;
+		}
+	}
+}

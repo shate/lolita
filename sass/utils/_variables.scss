@@ -1,0 +1,27 @@
+$footerH : 710px; /*Высота футтера*/
+$headrH : 80px; /*Высота хедера*/
+$base-font-size: 18px;
+$base-line-height : 25px;
+$base-font: "GothaProMed";
+$base-font-color : #242536;
+$header-color : #292a46;
+$footer-color : transparent;
+/*Цвет ссылок*/
+$normal: #fff;
+$hover : #fff;
+
+[class^="ico-"]{
+	display: inline-block;
+}
+
+$breakpoints: (
+
+				'medium': 690px,
+				'large':  1265px
+
+
+) !default;
+
+//Названия бэков
+//Пример заполнения (key1: value1, key2: value2, key3: value3);
+$name : ('f':'png','border':'png','line':'png','bl':'png','t1':'','t2':'','t3':'','t4':'','t5':'','blue':'','circle':'png','blue2':'','middle':'png','l':'png','faq':'','footer':'png','middle2':'png' ,'enter':'png','up':''  )!default;

@@ -1,0 +1,75 @@
+button{
+  font-family: $base-font;
+  letter-spacing: 0.025em;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  border: none;
+  text-align: center;
+  text-shadow: 1px 0 1px  rgba(#fff, .56);
+
+
+  &:hover{
+    color: #292a46;
+    text-shadow: none;
+  }
+}
+.btnb{
+  font-family:"PlayfairDisplay-Black";
+  line-height: 30px;
+  @include ico-sprite(btnb);
+  &:hover{
+    @include ico-sprite(btnb-h);
+  }
+}
+.btn{
+  font-family:"PlayfairDisplay-Black";
+  padding-bottom: 10px;
+  line-height: 50px;
+  @include ico-sprite(btn);
+ // @include transition-property(opacity);
+ // @include transition-duration(1s);
+  &:hover{
+    @include ico-sprite(btn-h);
+
+  }
+}
+
+.btnzp{
+  font-family:"PlayfairDisplay-Black";
+  line-height: 30px;
+  @include ico-sprite(zp);
+  line-height: 40px;
+  margin-top: 53px !important;
+    margin-bottom: 40px   !important;
+  &:hover{
+    @include ico-sprite(zp-h);
+  }
+}
+.sub{
+  @include ico-sprite(sub);
+  font-family:"PlayfairDisplay-Black";
+  padding-bottom: 5px;
+  color: #242536;
+  display: block;
+  margin: auto;
+  &:hover{
+    @include ico-sprite(sub-h);
+  }
+  &:hover{
+    color: #fff;
+  }
+}
+
+.btnent{
+  @include ico-sprite(ent);
+  display: block;
+  margin: 30px auto 0;
+
+  &:hover{
+    @include ico-sprite(ent-h);
+  }
+}

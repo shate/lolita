@@ -1,0 +1,170 @@
+footer {
+	background-color: $footer-color;
+	height: $footerH;
+	min-width: 960px;
+	background-position: 92% 0;
+	box-sizing: border-box;
+	padding-top: 60px;
+
+	h3{
+		color: #fff;
+		position: relative;
+		margin-bottom: 55px;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			margin-left: - 60px;
+			bottom: -38px;
+			height: 1px;
+			width: 120px;
+			background: rgb(205,181,133); /* Old browsers */
+			background: -moz-linear-gradient(left,  rgba(205,181,133,1) 0%, rgba(255,255,255,1) 50%, rgba(205,181,133,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 50%,rgba(205,181,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 50%,rgba(205,181,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb585', endColorstr='#cdb585',GradientType=1 ); /* IE6-9 */
+		}
+	}
+   .wrap{
+	   max-width: 1025px;
+	   min-width: 960px;
+	   margin: auto;
+	   position: relative;
+	   height: 100%;
+   }
+	.twice.contacts{
+		article{
+			height: auto !important;
+			&:first-child{
+				padding-left: 50px;
+				i{
+					float: left;
+				}
+				p{
+					margin-left: 60px;
+					margin-top: 13px;
+					line-height: 35px;
+					margin-right: 60px;
+				}
+			}
+			&:last-child{
+				padding-left: 110px;
+				margin-top: -5px;
+			}
+			i{
+				position: relative;
+				top: 10px;
+				&.ico-mail{
+					top: 25px;
+					left: 3px;
+					margin-right: 12px;
+				}
+				&.ico-phone{
+					top: 15px;
+					margin-right: 20px;
+				}
+			}
+			p{
+				margin-bottom: 2px;
+
+			}
+		}
+	}
+	form{
+		.twice{
+			position: relative;
+			overflow: hidden;
+			padding-bottom: 15px;
+			padding-top: 25px;
+			padding-left: 55px;
+			padding-right: 50px;
+		   article{
+				height: auto !important;
+					&.chb{
+					label{
+						font-family:"GothaProReg";
+						color: #fff;
+						font-size: 12px;
+					}
+					span{
+						display: block;
+						margin-bottom: -3px;
+					}
+					p.titl{
+						font-family:"GothaProReg";
+						color: #fff;
+						font-size: 14px;
+						padding-left: 24px;
+						letter-spacing: 0.09em;
+						margin-bottom: -5px;
+					}
+				}
+				&:first-child{
+					padding-right: 10px;
+					padding-top: 10px;
+				}
+				&:last-child{
+					padding-left: 5px;
+				}
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				height: 2px;
+				background: rgb(205,181,133); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(205,181,133,1) 0%, rgba(255,255,255,1) 50%, rgba(205,181,133,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 50%,rgba(205,181,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 50%,rgba(205,181,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb585', endColorstr='#cdb585',GradientType=1 ); /* IE6-9 */
+
+			}
+		}
+		.chb{
+			.chb-wrap{
+				padding-left: 25px;
+				margin-bottom: 15px;
+				overflow: hidden;
+				div{
+					width: 33%;
+					display: inline-block;
+					float: left;
+
+				}
+			}
+
+		}
+		article.chb.fixe{
+			margin-top: 0;
+			&:before{
+				height: 0;
+			}
+		}
+	}
+
+   .bordered{
+	   position: relative;
+	   margin-bottom: 30px;
+	   &:before, &:after{
+		   content: '';
+		   width: 2px;
+		   position: absolute;
+		   top: 0;
+		   height: 100%;
+		   background: rgb(205,181,133); /* Old browsers */
+		   background: -moz-linear-gradient(top,  rgba(205,181,133,1) 0%, rgba(255,255,255,1) 49%, rgba(205,181,133,1) 100%); /* FF3.6-15 */
+		   background: -webkit-linear-gradient(top,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 49%,rgba(205,181,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		   background: linear-gradient(to bottom,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 49%,rgba(205,181,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb585', endColorstr='#cdb585',GradientType=0 ); /* IE6-9 */
+
+	   }
+	   &:before{
+		   left: 0;
+	   }
+	   &:after{
+		   right: 0;
+	   }
+   }
+}

@@ -1,0 +1,82 @@
+@include font-face("PlayfairDisplay-Black", font-files("PlayfairDisplay-Black.ttf", "PlayfairDisplay-Black.eot","PlayfairDisplay-Black.svg","PlayfairDisplay-Black.woff"));
+@include font-face("GothaProReg", font-files("GothaProReg.ttf", "GothaProReg.eot","GothaProReg.svg","GothaProReg.woff"));
+@include font-face("GothaProBol", font-files("GothaProBol.ttf", "GothaProBol.eot","GothaProBol.svg","GothaProBol.woff"));
+@include font-face("GothaProLig", font-files("GothaProLig.ttf", "GothaProLig.eot","GothaProLig.svg","GothaProLig.woff"));
+
+@include font-face("PlayfairDisplay-Bold", font-files("PlayfairDisplay-Bold.ttf", "PlayfairDisplay-Bold.eot","PlayfairDisplay-Bold.svg","PlayfairDisplay-Bold.woff"));
+@include font-face("GothaProMed", font-files("GothaProMed.ttf", "GothaProMed.eot","GothaProMed.svg","GothaProMed.woff"));
+@include establish-baseline;
+body{
+	font-family: $base-font;	
+	color: $base-font-color;
+	font-size: $base-font-size;	
+}
+
+h1{
+	font-family: "PlayfairDisplay-Bold";
+	font-size: 36px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 60px;
+	letter-spacing: 0.09em;
+	position: relative;
+	margin-bottom: 65px;
+	&:after{
+		content: '';
+		position: absolute;
+
+		left: 50%;
+		margin-left: - 50px;
+		bottom: -28px;
+
+		height: 1px;
+		width: 100px;
+		background: rgb(205,181,133); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgba(205,181,133,1) 0%, rgba(255,255,255,1) 50%, rgba(205,181,133,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 50%,rgba(205,181,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgba(205,181,133,1) 0%,rgba(255,255,255,1) 50%,rgba(205,181,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb585', endColorstr='#cdb585',GradientType=1 ); /* IE6-9 */
+	}
+}
+
+h3{
+	font-family:"PlayfairDisplay-Bold";
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+	letter-spacing: 0;
+	position: relative;
+	z-index: 10;
+	span{
+		color: #fff;
+	}
+}
+h5{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+h6{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+strong{
+	font-family:"GothaProBol";
+}
+a{
+	@include link-colors($normal, $hover);
+	text-decoration: none;
+}
+
+p{
+	line-height: 31px;
+}
+  p.bold{
+    font-family: "GothaProBol";
+    
+    text-transform: uppercase;
+  }
+    p.small{
+    font-size: 14px;
+  }
